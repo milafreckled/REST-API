@@ -9,6 +9,6 @@ const subscribersSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  address: [Address],
+  address: Address,
 }
 module.exports = mongoose.model('Subscriber', subscribersSchema);
